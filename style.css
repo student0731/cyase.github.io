@@ -1,0 +1,145 @@
+/* ----------------------------------------------------
+  1. 基础设置 (Base Setup)
+---------------------------------------------------- */
+:root {
+    /* 颜色变量 - 方便全局修改主题颜色 */
+    --primary-color: #3498db;        /* 主题蓝 */
+    --secondary-color: #2c3e50;      /* 标题/深色文本 */
+    --text-color: #333;              /* 主体文本颜色 */
+    --background-color: #f4f4f9;     /* 页面背景色 */
+    --card-background: #ffffff;      /* 卡片背景色 */
+    --link-hover-color: #2980b9;     /* 链接悬停色 */
+    --border-color: #ecf0f1;         /* 分隔线/边框色 */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ----------------------------------------------------
+  2. 布局和容器 (Layout & Container)
+---------------------------------------------------- */
+.container {
+    max-width: 900px;
+    margin: 40px auto; /* 顶部和底部外边距 */
+    padding: 30px;
+    background-color: var(--card-background);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08); /* 轻微阴影 */
+    border-radius: 12px;
+}
+
+/* 响应式调整：在小屏幕上占满宽度 */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+}
+
+/* ----------------------------------------------------
+  3. 头部和简介 (Header & Profile)
+---------------------------------------------------- */
+h1 {
+    color: var(--secondary-color);
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+p {
+    margin-bottom: 1em;
+    font-size: 1em;
+    text-align: justify; /* 文本两端对齐，更正式 */
+}
+
+/* ----------------------------------------------------
+  4. 链接和按钮 (Links & Buttons)
+---------------------------------------------------- */
+.contact-links {
+    margin: 30px 0;
+}
+
+.contact-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--card-background); /* 链接文本使用白色 */
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-links a:hover {
+    background-color: var(--link-hover-color);
+    transform: translateY(-2px); /* 悬停时轻微上浮效果 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ----------------------------------------------------
+  5. 项目列表 (Projects Section)
+---------------------------------------------------- */
+.projects {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    text-align: left; /* 内部文本左对齐 */
+}
+
+.projects h2 {
+    color: var(--secondary-color);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.projects ul {
+    list-style-type: '👉 '; /* 自定义列表符号 */
+    padding-left: 20px;
+}
+
+.projects li {
+    margin-bottom: 15px;
+}
+
+.projects li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.projects li a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------------
+  6. 页脚 (Footer)
+---------------------------------------------------- */
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.copyright {
+    font-size: 0.9em;
+    color: #95a5a6;
+    margin-bottom: 10px;
+}
+
+/* 隐藏 HTML 模板中的旧样式 */
+hr {
+    display: none;
+}
