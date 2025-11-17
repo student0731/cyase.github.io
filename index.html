@@ -3,79 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>您的名字 | 个人主页</title>
-    <style>
-        /* 简单的CSS样式，您可以根据喜好修改 */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 30px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-        .subtitle {
-            color: #7f8c8d;
-            margin-bottom: 25px;
-            font-size: 1.1em;
-        }
-        .contact-links a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #3498db;
-            font-weight: bold;
-        }
-        .contact-links a:hover {
-            color: #2980b9;
-        }
-        .projects {
-            margin-top: 40px;
-            text-align: left;
-        }
-        .projects h2 {
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 10px;
-            color: #34495e;
-        }
-    </style>
+    <title>张三 | 软件工程师与独立开发者</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="container">
-        <h1>👋 嗨，我是 [您的名字/昵称]</h1>
-        <p class="subtitle">[您的职业或兴趣，例如：一名软件开发者 / 喜欢猫咪和编程]</p>
         
-        <p>欢迎来到我的个人主页！我主要关注 [主要领域，例如：Web开发 / 数据科学]。</p>
-        <p>在这里，您可以找到我的最新项目和一些技术思考。</p>
+        <header>
+            <h1>👋 嗨，我是 张三 (Zhang San)</h1>
+            <p class="subtitle">软件工程师 · 专注于 Web 技术与开源社区</p>
+        </header>
         
+        <section class="about">
+            <h2>👤 关于我</h2>
+            <p>
+                我是一名对技术充满热情的开发者。主要关注 **前端框架** (如 React/Vue) 和 **后端服务** (如 Node.js/Go)。
+                我热衷于编写清晰、高效的代码，并相信开源的力量可以推动世界进步。
+            </p>
+            <p>
+                目前，我正在探索 [您最近学习或感兴趣的技术，例如：**Serverless 架构**] 并尝试将其应用到我的个人项目中。
+                欢迎通过下方的链接与我交流！
+            </p>
+        </section>
+
         <div class="contact-links">
-            <a href="https://github.com/您的用户名" target="_blank">GitHub</a>
-            <a href="mailto:您的邮箱@example.com">Email</a>
-            <a href="链接到您的博客/LinkedIn/其他">博客/作品集</a>
+            <a href="https://github.com/您的用户名" target="_blank">🚀 GitHub</a>
+            <a href="mailto:zhangsan@example.com">📧 Email</a>
+            <a href="https://blog.example.com">✍️ 博客</a>
+            <a href="https://linkedin.com/in/您的用户名" target="_blank">🔗 LinkedIn</a>
         </div>
         
-        <div class="projects">
-            <h2>✨ 精彩项目</h2>
+        <section class="projects">
+            <h2>✨ 重点项目</h2>
             <ul>
-                <li><strong>项目 A:</strong> 这是一个 [简短描述]。 <a href="链接到项目仓库">查看代码</a></li>
-                <li><strong>项目 B:</strong> 关于 [简短描述] 的探索。 <a href="链接到项目仓库">查看代码</a></li>
-                <li><strong>项目 C:</strong> 一个有趣的小工具。 <a href="链接到项目仓库">查看代码</a></li>
+                <li>
+                    <strong>项目名称 A - [一个有趣的标签]:</strong> 一个基于 [技术栈] 的 [应用类型，如：任务管理工具]。
+                    <p>使用了 [主要技术点 1] 和 [主要技术点 2] 来实现 [核心功能]。</p>
+                    <a href="链接到项目 A 仓库" target="_blank">查看代码</a> | 
+                    <a href="链接到项目 A 演示地址" target="_blank">在线演示</a>
+                </li>
+                <li>
+                    <strong>开源贡献 B - [学习]:</strong> 为 [开源项目名称] 贡献了 [功能描述，如：优化了性能]。
+                    <p>这段经历让我深入了解了 [技术知识点]。</p>
+                    <a href="链接到 PR/Issue" target="_blank">查看详情</a>
+                </li>
+                <li>
+                    <strong>小工具 C - [日常]:</strong> 一个简单的 [工具类型，如：Markdown 预览器]，方便日常工作。
+                    <p>完全由原生 JavaScript/Python 编写，追求极致的轻量化。</p>
+                    <a href="链接到项目 C 仓库" target="_blank">查看代码</a>
+                </li>
             </ul>
-        </div>
+        </section>
         
-        <hr style="margin-top: 50px; border: 0; border-top: 1px solid #eee;">
-        <p style="font-size: 0.8em; color: #95a5a6;">&copy; 2025 您的名字。All rights reserved.</p>
+        <footer>
+            <p class="copyright">基于 GitHub Pages 搭建 | &copy; 2025 张三。所有权利保留。</p>
+            <p style="font-size: 0.7em; color: #aaa;">最后更新日期：2025年11月</p>
+        </footer>
+
     </div>
 </body>
 </html>
